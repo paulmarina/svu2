@@ -16,4 +16,5 @@ log/
 target/
 
 build/
+ImportedClasses/
 /.apt_generated/
