@@ -5,14 +5,11 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
+import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
 
-import ro.fortech.movies.DisplayMoviesController;
-import ro.fortech.movies.Movie;
-
 @ManagedBean(name = "displayMoviesDialog")
-@SessionScoped
+@RequestScoped
 public class DisplayMoviesDialog implements Serializable {
 
 	private static final long serialVersionUID = -1718678896995420865L;
@@ -22,6 +19,7 @@ public class DisplayMoviesDialog implements Serializable {
 	private List<Movie> moviesList;
 
 	public DisplayMoviesDialog() {
+		System.out.println("sdasd");
 	}
 
 	@PostConstruct
